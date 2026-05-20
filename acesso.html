@@ -3,12 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portal do aluno</title>
+    <title>Portal do aluno</title>
     <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'arial', sans-serif;
+            background-color: #ffffff;
+        }
         
+        .header-portal {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }  
+
+        .unidev {
+            font-size: 30px;
+            color: #000000;
+            margin: 0;
+        }
+
+        .portaldoaluno {
+            margin: 0;
+            font-size: 30px;
+            color: #000000;
+        }
+        
+        .nav-menu {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: rgb(91, 153, 214);
+            padding: 10px 100px;
+            height: auto;
+            min-height: 90px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: #000000;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            gap: 8px;
+            width: 150px;
+        }    
+
+        .menu-item:hover {
+            transform: scale(1.1);
+        }  
+
+        .menu-icon {
+            width: auto;
+            height: 35px;
+            object-fit: contain;
+        }  
+
+        .menu-text {
+            font-size: 13px;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .nav-disciplinas {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: flex-start;
+            
+        }
+
+        
+        .menu-disciplinas {
+            background-color: rgb(91, 153, 214);
+            width: 330px;
+            padding: 8px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            box-sizing: border-box;
+            
+        }
+        
+        .topico {
+            background-color: #6fbee0;
+            color: black;
+            padding: 20px 15px;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: left;
+            border-radius: 3px;
+            
+        }
+
+        .materias {
+            background-color: #9ad4ed;
+            color: #333333;
+            padding: 20px 15px;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: left;
+            border-radius: 3px;
+            cursor: pointer; 
+            transition: background-color 0.2s ease structures, transform 0.3s ease, font-size 0.3s ease;
+            
+            
+        }
+
+        .materias:hover {
+            background-color: #7ec8e0;
+            transform: scale(1.05); 
+            font-size: 15px;
+            color: #000000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        
+        .conteudo-principal {
+            flex: 1; 
+            box-sizing: border-box;
+        }
+
+      
+        .boas-vindas {
+            background-color: #f4f7f6; 
+            border: 2px solid #b5d1e0;  
+            border-radius: 8px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;   
+            text-align: center;    
+            gap: 30px;              
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 400px;      
+        }
+
+        .banner-info h1 {
+            font-size: 32px;
+            color: #1a4a75; 
+            margin: 0 0 15px 0;
+        }
+
+        .banner-info p {
+            font-size: 16px;
+            color: #555555;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0;
+        }
+
+        
+        .boas-vindas img {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body>
-    
+
+    <header class="header-portal">
+        <h1 class="unidev">UNIDEV</h1>
+        <h1 class="portaldoaluno">PORTAL DO ALUNO</h1>
+    </header>
+
+    <nav class="nav-menu">
+        <div class="menu-item" title="Sistemas de provas">
+            <img class="menu-icon" src="img-menu/book-open-cover (1).png" alt="Sistemas de provas">
+            <p class="menu-text">Sistemas de provas</p>
+        </div>
+        <div class="menu-item" title="Sistemas de notas">
+            <img class="menu-icon" src="img-menu/document (1).png" alt="Sistemas de notas">
+            <p class="menu-text">Sistemas de notas</p>
+        </div>
+        <div class="menu-item" title="Financeiro">
+            <img class="menu-icon" src="img-menu/money.png" alt="Financeiro">
+            <p class="menu-text">Financeiro</p>
+        </div>
+        <div class="menu-item" title="Biblioteca virtual">
+            <img class="menu-icon" src="img-menu/laptop.png" alt="Biblioteca virtual">
+            <p class="menu-text">Biblioteca virtual</p>
+        </div>
+        <div class="menu-item" title="Fale conosco">
+            <img class="menu-icon" src="img-menu/telephone.png" alt="Fale conosco">
+            <p class="menu-text">Fale conosco</p>
+        </div>
+        <div class="menu-item" title="Calendário acadêmico">
+            <img class="menu-icon" src="img-menu/schedule.png" alt="Calendário acadêmico">
+            <p class="menu-text">Calendário acadêmico</p>
+        </div>
+        <div class="menu-item" title="Centro de Estágios">
+            <img class="menu-icon" src="img-menu/freelance.png" alt="Centro de Estágios">
+            <p class="menu-text">Centro de Estágios</p>
+        </div>
+    </nav>
+
+    <div class="nav-disciplinas">
+        
+        <aside class="menu-disciplinas">
+            <div class="topico">Matérias disponíveis:</div>
+            <div class="materias">Programação Orientada a Objetos</div>
+            <div class="materias">Banco de Dados</div>
+            <div class="materias">Engenharia de Software</div>
+            <div class="materias">Programação para Dispositivos Móveis</div>
+            <div class="materias">Programação Web</div>
+            <div class="materias">Rede de Computadores</div>
+        </aside>
+
+        <main class="conteudo-principal">
+            <div class="boas-vindas">
+                <div class="banner-info">
+                    <h1>Que bom ter você de volta!</h1>
+                    <p>Seu progresso acadêmico está esperando por você. Mantenha seus prazos em dia e bons estudos nesta jornada tecnológica!</p>
+                </div>
+                <img src="img-card/mat.png" alt="imagem de boas-vindas">
+            </div>
+        </main>
+
+    </div>
+
 </body>
 </html>
