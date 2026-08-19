@@ -81,7 +81,7 @@ body{
         Caso esqueça, entre em contato com o suporte.
     </div>
 
-    <button class="botao" onclick="window.location.href='login.php'">
+    <button class="botao" onclick="window.location.href='index.php'">
         Voltar a tela de login
     </button>
 </div>
