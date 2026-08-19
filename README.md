@@ -16,11 +16,11 @@ O **UNIDEV — Portal do Aluno** é uma aplicação web completa desenvolvida pa
 
 | 1. Tela de Login | 2. Formulário de Cadastro | 3. Confirmação de Matrícula |
 | :---: | :---: | :---: |
-| <img src="./imagens/inicio.png" width="280" /> | <img src="./imagens/cadastro.png" width="280" /> | <img src="./imagens/matricula.png" width="280" /> |
+| <img src="./Imagens/inicio.png" width="280" /> | <img src="./Imagens/cadastro.png" width="280" /> | <img src="./Imagens/matricula.png" width="280" /> |
 
 | 4. Autenticação Preenchida | 5. Painel do Aluno (Dashboard) |
 | :---: | :---: |
-| <img src="./imagens/preenchido.png" width="380" /> | <img src="./imagens/portal.png" width="380" /> |
+| <img src="./Imagens/preenchido.png" width="380" /> | <img src="./Imagens/portal.png" width="380" /> |
 
 ---
 
